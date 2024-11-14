@@ -32,14 +32,7 @@ this.addEventListener("install", (event) => {
             console.log('caching files')
 
               cache.addAll([
-                 "/static/js/bundle.js",
-                 "/static/js/main.chunk.js",
-                 "/static/js/0.chunk.js",
-                  "/index.html",
-                 "/offline.html",
-                  "/",
-                  "/features",
-                 "/local.js"
+                "/2.d7a32088.chunk.js", "/main.cace1e96.chunk.js", "react_devtools_backend.js", "/inject.js","/index.html"
             ])
         })
     )
