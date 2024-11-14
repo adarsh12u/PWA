@@ -29,6 +29,8 @@ this.addEventListener("install", (event) => {
     console.log("coming in the cache store event ")
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
+            console.log('caching files')
+
               cache.addAll([
                  "/static/js/bundle.js",
                  "/static/js/main.chunk.js",
@@ -36,7 +38,8 @@ this.addEventListener("install", (event) => {
                   "/index.html",
                  "/offline.html",
                   "/",
-                 "/features"
+                  "/features",
+                 "/local.js"
             ])
         })
     )
@@ -65,6 +68,7 @@ this.addEventListener("install", (event) => {
 
 
 this.addEventListener("fetch", (event) => { 
+    console.log("coming in the fetch function")
     if (!navigator.onLine) { 
         event.respondWith(
             caches.match(event.request).then((response) => {
