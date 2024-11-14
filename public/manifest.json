@@ -1,0 +1,15 @@
+{
+  "short_name": "Single Page App",
+  "name":"pwa testingpackage com.example.liangy.liangy;",
+  "icons":[
+    {
+       "src": "/images/icon.jpeg",
+       "sizes": "192x192",
+       "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
